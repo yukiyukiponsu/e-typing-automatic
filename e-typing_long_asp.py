@@ -1,6 +1,5 @@
 from selenium import webdriver # Webブラウザを自動操作する（python -m pip install selenium)
 from selenium.webdriver.chrome.options import Options # オプションを使うために必要
-#import chromedriver_binary  # パスを通すためのコード
 from time import sleep
 from selenium.webdriver.common.keys import Keys
 import selenium
@@ -11,8 +10,8 @@ start = time.time() #処理時間の測定開始
 # option = Options()                          # オプションを用意
 # option.add_argument('--headless')           # ヘッドレスモードの設定を付与
 
-# driver = webdriver.Chrome(options=option, executable_path='/Users/yamamotoyukito/Downloads/chromedriver')   # Chromeを準備(optionでシークレットモードにしている）
-driver = webdriver.Chrome(executable_path='/Users/yamamotoyukito/Downloads/chromedriver')   # Chromeを準備(optionでシークレットモードにしている）
+# driver = webdriver.Chrome(options=option, executable_path='yourpath/chromedriver')   # Chromeを準備(optionでシークレットモードにしている）
+driver = webdriver.Chrome(executable_path='yourpath/chromedriver')   # Chromeを準備(optionでシークレットモードにしている）
 
 url = "https://www.e-typing.ne.jp/roma/variety/long.asp"
 driver.get(url) #googleを開く
